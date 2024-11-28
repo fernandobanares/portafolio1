@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="display-5 text-center mb-4">Mis Proyectos</h1>
+    <div class="row g-4">
+        {% for proyecto in proyectos %}
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm border-0">
+                <img src="{{ proyecto.imagen_principal.url }}" class="card-img-top" alt="{{ proyecto.titulo }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ proyecto.titulo }}</h5>
+                    <p class="card-text text-muted">{{ proyecto.descripcion|truncatechars:100 }}</p>
+                    <p class="small"><strong>Fecha:</strong> {{ proyecto.fecha }}</p>
+                    <p class="small"><strong>Herramientas:</strong> {{ proyecto.herramientas }}</p>
+                    <a href="{{ proyecto.url_github }}" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="alert alert-warning text-center">
+            <i class="fas fa-exclamation-circle"></i> No hay proyectos disponibles en este momento.
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
