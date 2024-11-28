@@ -21,4 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),  # Redirige la raíz a las URLs de myapp
+    path('sobre-mi/', views.sobre_mi, name='sobre_mi'),
 ]
