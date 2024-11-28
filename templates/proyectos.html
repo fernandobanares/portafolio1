@@ -7,7 +7,8 @@
         {% for proyecto in proyectos %}
         <div class="col-md-6 col-lg-4">
             <div class="card shadow-sm border-0">
-                <img src="{{ proyecto.imagen_principal.url }}" class="card-img-top" alt="{{ proyecto.titulo }}">
+                <!-- Imagen ajustada con clase 'img-fluid' y tamaño máximo de 250px de altura -->
+                <img src="{{ proyecto.imagen_principal.url }}" class="card-img-top img-fluid" style="height: 250px; object-fit: cover;" alt="{{ proyecto.titulo }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ proyecto.titulo }}</h5>
                     <p class="card-text text-muted">{{ proyecto.descripcion|truncatechars:100 }}</p>
