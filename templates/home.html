@@ -35,18 +35,13 @@
         <h2 class="mb-3">Mis Proyectos</h2>
         <p class="text-muted">Aquí podrás ver algunos de los proyectos más destacados en los que he trabajado.</p>
         <ul class="list-group">
+            {% for proyecto in proyectos %}
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                Proyecto 1
-                <span class="badge bg-primary rounded-pill">Ver más</span>
+                <img src="{{ proyecto.imagen_principal.url }}" class="img-thumbnail" width="50" alt="{{ proyecto.titulo }}">
+                {{ proyecto.titulo }}
+                <a href="{{ proyecto.url_github }}" class="badge bg-primary rounded-pill" target="_blank">Ver más</a>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                Proyecto 2
-                <span class="badge bg-primary rounded-pill">Ver más</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                Proyecto 3
-                <span class="badge bg-primary rounded-pill">Ver más</span>
-            </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
