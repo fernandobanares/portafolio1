@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-&!r5q^1zb!io9z3kb=mp8l+2k^fql(jd^d0^$34-7%^o#nc^yz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite-azib.onrender.com']
 
 
 # Application definition
@@ -76,20 +76,20 @@ WSGI_APPLICATION = "portafolio.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-""" DATABASES = {
+DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
-} """
+}
 
-DATABASES = {
+""" DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
         default='postgresql://postgres:postgres@localhost:5432/mysite',
         conn_max_age=600
     )
-}
+} """
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
