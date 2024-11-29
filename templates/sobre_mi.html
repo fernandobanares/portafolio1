@@ -8,7 +8,7 @@
     <div class="row">
         <!-- Columna de información personal y foto -->
         <div class="col-lg-4 col-md-12 mb-4 text-center">
-            <img src="{% static 'images/fernando_banares.jpg' %}" class="img-fluid rounded-circle shadow-lg" alt="Fernando Bañares" style="max-width: 90%; height: auto;">
+            <img src="{% static 'images/fernando_banares.jpg' %}" class="img-fluid rounded-circle shadow-lg" alt="Fernando Bañares" style="max-width: 80%; height: auto;">
             <h1 class="display-4 mt-4">Fernando Bañares</h1>
             <p class="lead text-muted">Analista de Datos | Ingeniero Civil Industrial | Data Scientist</p>
             <p class="text-muted">Resido en Villa Alemana, Chile. Soy un profesional multifacético, apasionado por la tecnología y el análisis de datos.</p>
@@ -28,10 +28,16 @@
             <div class="card shadow-sm mb-4">
                 <div class="card-body">
                     <h3 class="card-title">Pasión por la Escalada</h3>
-                    <p class="card-text">
-                        La escalada ha sido una de mis pasiones más grandes. Este deporte me ha enseñado a ser disciplinado, a superar mis límites y a fijarme objetivos claros para alcanzarlos. Gracias a este deporte, he conocido muchos amigos y lugares hermosos, lo que ha enriquecido mi vida personal y profesionalmente. La escalada también me ha ayudado a mejorar habilidades blandas como el trabajo en equipo, la comunicación efectiva y la resiliencia.
-                    </p>
-                    <img src="{% static 'images/escalada.jpg' %}" class="img-fluid rounded shadow-lg" alt="Escalada en roca" style="max-width: 100%; height: auto;">
+                    <div class="d-flex align-items-center">
+                        <div class="me-4">
+                            <p class="card-text">
+                                La escalada ha sido una de mis pasiones más grandes. Este deporte me ha enseñado a ser disciplinado, a superar mis límites y a fijarme objetivos claros para alcanzarlos. Gracias a este deporte, he conocido muchos amigos y lugares hermosos, lo que ha enriquecido mi vida personal y profesionalmente. La escalada también me ha ayudado a mejorar habilidades blandas como el trabajo en equipo, la comunicación efectiva y la resiliencia.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="{% static 'images/escalada.jpg' %}" class="img-fluid rounded shadow-lg" alt="Escalada en roca" style="max-width: 150px; height: auto;">
+                        </div>
+                    </div>
                 </div>
             </div>
 
