@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Proyecto
+from .models import Proyecto, Mensaje
 from django.contrib import messages
 from .forms import ContactoForm
 
@@ -28,7 +28,7 @@ def contacto(request):
 
             # Aquí puedes guardar el mensaje en la base de datos o enviarlo por correo
             # Por ejemplo:
-            # Contacto.objects.create(nombre=nombre, email=email, asunto=asunto, mensaje=mensaje)
+            Mensaje.objects.create(nombre=nombre, email=email, asunto=asunto, mensaje=mensaje)
 
             # Agregar un mensaje de éxito
             messages.success(request, '¡Tu mensaje ha sido enviado exitosamente!')
