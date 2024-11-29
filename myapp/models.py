@@ -15,3 +15,14 @@ class Proyecto(models.Model):
 
     def __str__(self):
         return self.titulo
+
+
+class Mensaje(models.Model):
+    nombre = models.CharField(max_length=100)
+    email = models.EmailField()
+    asunto = models.CharField(max_length=150)
+    mensaje = models.TextField()
+    fecha = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Mensaje de {self.nombre} sobre {self.asunto}"
