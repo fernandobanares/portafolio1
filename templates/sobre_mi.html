@@ -8,7 +8,7 @@
     <!-- Sección de presentación -->
     <div class="row align-items-center mb-5">
         <div class="col-lg-4 text-center">
-            <img src="{% static 'images/fernando_banares.jpg' %}" class="img-fluid rounded-circle shadow-lg mb-3" alt="Fernando Bañares" style="max-width: 200px; height: auto;">
+            <img src="{% static 'images/fernando_banares.jpg' %}" class="img-fluid rounded-circle shadow-lg mb-3" alt="Fernando Bañares" style="max-width: 150px; height: auto;">
         </div>
         <div class="col-lg-8">
             <h1 class="display-5">Fernando Bañares</h1>
@@ -19,84 +19,91 @@
         </div>
     </div>
 
-    <!-- Sección principal con columnas -->
-    <div class="row g-5">
-        <!-- Columna izquierda -->
+    <!-- Sección principal con tarjetas -->
+    <div class="row g-4">
+        <!-- Tarjeta: ¿Quién soy? -->
         <div class="col-lg-6">
-            <!-- ¿Quién soy? -->
-            <section>
-                <h2>¿Quién soy?</h2>
-                <p>
-                    Soy Ingeniero Civil Industrial egresado de la Universidad de La Frontera con especialización en <strong>análisis de datos</strong>, <strong>Machine Learning</strong> y <strong>visualización de datos</strong>. 
-                    Mi formación me ha permitido desarrollar soluciones escalables para diversas problemáticas.
-                </p>
-            </section>
-
-            <!-- Formación -->
-            <section class="mt-4">
-                <h2>Formación</h2>
-                <p>
-                    Egresé como Ingeniero Civil Industrial con mención en Bioprocesos de la <strong>Universidad de La Frontera</strong>. Complementé mis estudios con programas en <strong>Ciencia de Datos</strong>, <strong>Analítica Predictiva</strong> y <strong>Machine Learning</strong>.
-                </p>
-            </section>
-
-            <!-- Habilidades Blandas -->
-            <section class="mt-4">
-                <h2>Habilidades Blandas</h2>
-                <ul>
-                    <li><strong>Trabajo en equipo:</strong> Colaboro eficazmente en equipos multidisciplinarios.</li>
-                    <li><strong>Comunicación efectiva:</strong> Explico ideas técnicas a audiencias no técnicas.</li>
-                    <li><strong>Responsabilidad:</strong> Cumplo con plazos y estándares de calidad.</li>
-                    <li><strong>Resiliencia:</strong> Afronto desafíos con una actitud positiva y de aprendizaje continuo.</li>
-                </ul>
-            </section>
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">¿Quién soy?</h3>
+                    <p class="card-text">
+                        Soy Ingeniero Civil Industrial egresado de la Universidad de La Frontera con especialización en <strong>análisis de datos</strong>, <strong>data science/machine learning</strong>. Mi formación me ha permitido desarrollar soluciones escalables para diversas problemáticas.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <!-- Columna derecha -->
+        <!-- Tarjeta: Pasión por la Escalada -->
         <div class="col-lg-6">
-            <!-- Pasión por la Escalada -->
-            <section>
-                <h2>Pasión por la Escalada</h2>
-                <div class="d-flex align-items-center">
-                    <div>
-                        <p>
-                            La escalada me ha enseñado disciplina, superación personal y trabajo en equipo. Este deporte me ha llevado a conocer amigos y lugares increíbles, enriqueciéndome personal y profesionalmente. 
-                            Además, ha mejorado habilidades como la resiliencia y la capacidad de fijar y alcanzar objetivos claros.
-                        </p>
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Pasión por la Escalada</h3>
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <p class="card-text">
+                                La escalada me ha enseñado disciplina, superación personal y trabajo en equipo. Este deporte me ha llevado a conocer amigos y lugares increíbles, enriqueciéndome personal y profesionalmente. Además, ha mejorado habilidades como la resiliencia y la capacidad de fijar y alcanzar objetivos claros.
+                            </p>
+                        </div>
+                        <img src="{% static 'images/escalada.jpg' %}" class="img-fluid rounded shadow-lg ms-3" alt="Escalada en roca" style="max-width: 80px; height: auto;">
                     </div>
-                    <img src="{% static 'images/escalada.jpg' %}" class="img-fluid rounded shadow-lg ms-3" alt="Escalada en roca" style="max-width: 120px; height: auto;">
                 </div>
-            </section>
+            </div>
+        </div>
 
-            <!-- Áreas de Especialización -->
-            <section class="mt-4">
-                <h2>Áreas de Especialización</h2>
-                <p>
-                    Mi perfil es adaptable y multifacético. Me especializo en <strong>análisis de datos</strong>, pero también tengo experiencia en <strong>gestión empresarial</strong>, <strong>Data Science</strong> e <strong>Ingeniería de Datos</strong>. Estas áreas me permiten aportar soluciones efectivas y escalables.
-                </p>
-            </section>
+        <!-- Tarjeta: Habilidades Blandas -->
+        <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Habilidades Blandas</h3>
+                    <ul>
+                        <li><strong>Trabajo en equipo:</strong> Colaboro eficazmente en equipos multidisciplinarios.</li>
+                        <li><strong>Comunicación efectiva:</strong> Explico ideas técnicas a audiencias no técnicas.</li>
+                        <li><strong>Responsabilidad:</strong> Cumplo con plazos y estándares de calidad.</li>
+                        <li><strong>Resiliencia:</strong> Afronto desafíos con una actitud positiva y de aprendizaje continuo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta: Áreas de Especialización -->
+        <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Áreas de Especialización</h3>
+                    <p class="card-text">
+                        Mi perfil es adaptable y multifacético. Me especializo en <strong>análisis de datos</strong>, pero también tengo experiencia en <strong>gestión empresarial</strong>, <strong>Data Science</strong> e <strong>Ingeniería de Datos</strong>. Estas áreas me permiten aportar soluciones efectivas y escalables.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Sección final -->
+    <!-- Sección: ¿Por qué deberías contactarme? -->
     <div class="row mt-5">
         <div class="col-lg-12">
-            <h2 class="text-center">¿Por qué deberías contactarme?</h2>
-            <p class="text-center">
-                Si buscas a alguien con un enfoque multidisciplinario, habilidades analíticas sólidas y una actitud orientada a resultados, ¡contáctame! Estoy listo para contribuir al éxito de proyectos innovadores.
-            </p>
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h2 class="card-title">¿Por qué deberías contactarme?</h2>
+                    <p class="card-text">
+                        Si buscas a alguien con un enfoque multidisciplinario, habilidades analíticas sólidas y una actitud orientada a resultados, ¡contáctame! Estoy listo para contribuir al éxito de proyectos innovadores.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Sección: ¿Cómo puedes contactarme? -->
     <div class="row mt-4">
         <div class="col-lg-12">
-            <h2 class="text-center">¿Cómo puedes contactarme?</h2>
-            <div class="d-flex justify-content-center mt-3">
-                <ul class="list-unstyled text-center">
-                    <li><i class="fas fa-envelope me-2"></i><strong>Email:</strong> fernandobanaresc@gmail.com</li>
-                    <li><i class="fab fa-linkedin me-2"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fbanarescarrasco/" target="_blank">https://www.linkedin.com/in/fbanarescarrasco/</a></li>
-                    <li><i class="fab fa-github me-2"></i><strong>GitHub:</strong> <a href="https://github.com/fernandobanares" target="_blank">https://github.com/fernandobanares</a></li>
-                </ul>
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h2 class="card-title">¿Cómo puedes contactarme?</h2>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-envelope me-2"></i><strong>Email:</strong> fernandobanaresc@gmail.com</li>
+                        <li><i class="fab fa-linkedin me-2"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fbanarescarrasco/" target="_blank">https://www.linkedin.com/in/fbanarescarrasco/</a></li>
+                        <li><i class="fab fa-github me-2"></i><strong>GitHub:</strong> <a href="https://github.com/fernandobanares" target="_blank">https://github.com/fernandobanares</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
