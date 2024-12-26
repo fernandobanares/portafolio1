@@ -76,16 +76,16 @@ WSGI_APPLICATION = "portafolio.wsgi.app"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
-}
+} """
 
 
 
-""" DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portafolio',  # Nombre de la base de datos
@@ -94,7 +94,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',  # Puerto por defecto para PostgreSQL
     }
-} """
+}
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
