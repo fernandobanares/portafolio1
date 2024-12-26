@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
-import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -71,35 +70,28 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "VercelDeploy.wsgi.app"
+WSGI_APPLICATION = "portafolio.wsgi.app"
 
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-""" DATABASES = {
+DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
-} """
-
-DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
 }
+
 
 
 """ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mysite_fr7u',  # Nombre de la base de datos
-        'USER': 'mysite',       # Nombre de usuario
-        'PASSWORD': 'caysDfPnGbu05cJNMIj4sKUL10xcAaMr',  # Contraseña
-        'HOST': 'dpg-ct481v5umphs73e471d0-a.oregon-postgres.render.com',  # Host de PostgreSQL
+        'NAME': 'portafolio',  # Nombre de la base de datos
+        'USER': 'mi_usuario_posgres',#usuario
+        'PASSWORD': 'python2024',#contraseña
+        'HOST': 'localhost',
         'PORT': '5432',  # Puerto por defecto para PostgreSQL
     }
 } """
@@ -125,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = "es-us"
+LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "UTC"
 
